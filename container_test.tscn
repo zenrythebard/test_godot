@@ -1,0 +1,37 @@
+[gd_scene load_steps=6 format=3 uid="uid://dgx8ihqcidla4"]
+
+[ext_resource type="Texture2D" uid="uid://c5h231d8u6kqe" path="res://images (1).jpg" id="1_mqh4w"]
+[ext_resource type="Texture2D" uid="uid://ckuiix2ljeq6o" path="res://container_norm2.png" id="2_fuso5"]
+
+[sub_resource type="CanvasTexture" id="CanvasTexture_f2ffa"]
+diffuse_texture = ExtResource("1_mqh4w")
+normal_texture = ExtResource("2_fuso5")
+
+[sub_resource type="Gradient" id="Gradient_11u48"]
+colors = PackedColorArray(1, 1, 1, 0.19215687, 0, 0, 0, 0)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_su8vd"]
+gradient = SubResource("Gradient_11u48")
+fill = 1
+fill_from = Vector2(0.5, 0.5046729)
+fill_to = Vector2(0.8457944, 0.17289719)
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = SubResource("CanvasTexture_f2ffa")
+
+[node name="PointLight2D" type="PointLight2D" parent="."]
+position = Vector2(-274, -493)
+scale = Vector2(116.23243, 85.929695)
+energy = 7.78
+texture = SubResource("GradientTexture2D_su8vd")
+height = 179.0
+
+[node name="DirectionalLight2D" type="DirectionalLight2D" parent="."]
+position = Vector2(280, -1483)
+color = Color(0, 0, 0, 1)
+energy = 0.62
+blend_mode = 2
+height = 1.0
+max_distance = 16384.0
