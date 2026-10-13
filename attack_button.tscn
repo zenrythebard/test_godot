@@ -1,0 +1,101 @@
+[gd_scene format=3 uid="uid://cgwty7ig8d5fp"]
+
+[ext_resource type="Texture2D" uid="uid://do0irbdy4ex4g" path="res://container_dif2.png" id="1_rt2lq"]
+[ext_resource type="Texture2D" uid="uid://ckuiix2ljeq6o" path="res://container_norm2.png" id="2_k4i8d"]
+[ext_resource type="Texture2D" uid="uid://ccuhskjarhdjd" path="res://inner_container_0.png" id="3_henue"]
+[ext_resource type="Texture2D" uid="uid://d0utsx2qdrhiq" path="res://inner_container_1.png" id="4_gdmm8"]
+[ext_resource type="Texture2D" uid="uid://dv3vpbp7e50pe" path="res://inner_container_2.png" id="5_v04n7"]
+[ext_resource type="Texture2D" uid="uid://dqd1puopvm1x6" path="res://attack_wing_dif.png" id="6_ktaua"]
+[ext_resource type="Texture2D" uid="uid://cdh3hlfxx5i8i" path="res://attack_wing_norm.png" id="7_bgqdj"]
+[ext_resource type="Texture2D" uid="uid://rbxudggblidl" path="res://attack_button_dif.png" id="8_et80f"]
+[ext_resource type="Texture2D" uid="uid://5vbu1l0i0kra" path="res://attack_button_norm.png" id="9_ap0ui"]
+
+[sub_resource type="CanvasTexture" id="CanvasTexture_f2ffa"]
+diffuse_texture = ExtResource("1_rt2lq")
+normal_texture = ExtResource("2_k4i8d")
+
+[sub_resource type="CanvasTexture" id="CanvasTexture_dvb8t"]
+diffuse_texture = ExtResource("6_ktaua")
+normal_texture = ExtResource("7_bgqdj")
+
+[sub_resource type="CanvasTexture" id="CanvasTexture_iifhh"]
+diffuse_texture = ExtResource("8_et80f")
+normal_texture = ExtResource("9_ap0ui")
+
+[sub_resource type="Gradient" id="Gradient_11u48"]
+colors = PackedColorArray(1, 1, 1, 1, 0, 0, 0, 0)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_su8vd"]
+gradient = SubResource("Gradient_11u48")
+fill = 1
+fill_from = Vector2(0.5, 0.5046729)
+fill_to = Vector2(0.8457944, 0.17289719)
+
+[node name="Attack" type="Node2D" unique_id=1960019258]
+
+[node name="Button" type="Node2D" parent="." unique_id=2111148232]
+position = Vector2(0.3594665, 3.0398369e-05)
+scale = Vector2(0.1, 0.1)
+
+[node name="Container" type="Sprite2D" parent="Button" unique_id=1249157264]
+texture = SubResource("CanvasTexture_f2ffa")
+
+[node name="InnerBase" type="Sprite2D" parent="Button" unique_id=2051956585]
+scale = Vector2(0.99999994, 0.99999994)
+texture = ExtResource("3_henue")
+
+[node name="InnerHover" type="Sprite2D" parent="Button" unique_id=1785406294]
+visible = false
+self_modulate = Color(1, 1, 1, 0.84313726)
+scale = Vector2(0.99999976, 0.99999976)
+texture = ExtResource("4_gdmm8")
+
+[node name="InnerClick" type="Sprite2D" parent="Button" unique_id=1575378755]
+visible = false
+self_modulate = Color(1, 1, 1, 0.8117647)
+scale = Vector2(0.99999976, 0.99999976)
+texture = ExtResource("5_v04n7")
+
+[node name="IconWing" type="Sprite2D" parent="Button" unique_id=1007076004]
+position = Vector2(-30, -30)
+scale = Vector2(1.2599999, 1.2599999)
+texture = SubResource("CanvasTexture_dvb8t")
+
+[node name="IconAttack" type="Sprite2D" parent="Button" unique_id=622939292]
+position = Vector2(-30, -30)
+scale = Vector2(1.26, 1.26)
+texture = SubResource("CanvasTexture_iifhh")
+
+[node name="PointLight2D2" type="PointLight2D" parent="." unique_id=408077892]
+position = Vector2(-323.64056, 277)
+scale = Vector2(26.011232, 23.888674)
+energy = 0.9
+texture = SubResource("GradientTexture2D_su8vd")
+height = 1024.0
+
+[node name="PointLight2D3" type="PointLight2D" parent="." unique_id=325359030]
+position = Vector2(359.35953, 14)
+scale = Vector2(22.612795, 21.224611)
+energy = 1.2
+texture = SubResource("GradientTexture2D_su8vd")
+height = 1024.0
+
+[node name="PointLight2D" type="PointLight2D" parent="." unique_id=332837767]
+position = Vector2(12, 24.000008)
+scale = Vector2(3.64148, 3.603029)
+energy = 0.75
+texture = SubResource("GradientTexture2D_su8vd")
+
+[node name="PointLight2D4" type="PointLight2D" parent="." unique_id=840146241]
+position = Vector2(-47, -136)
+scale = Vector2(20.47217, 18.849613)
+energy = 1.2
+texture = SubResource("GradientTexture2D_su8vd")
+
+[node name="DirectionalLight2D" type="DirectionalLight2D" parent="." unique_id=948716022]
+position = Vector2(4.359436, -1982)
+color = Color(0, 0, 0, 1)
+energy = 0.62
+blend_mode = 2
+height = 1.0
+max_distance = 16384.0
