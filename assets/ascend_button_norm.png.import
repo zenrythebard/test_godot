@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://da3mgmoeduay3"
-path="res://.godot/imported/container_norm.png-1b61ef4c73872435b6be335e7f7da7f5.ctex"
+uid="uid://bifms7kq80csf"
+path="res://.godot/imported/ascend_button_norm.png-8b14c019b276ec26e7ee44970890306a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://container_norm.png"
-dest_files=["res://.godot/imported/container_norm.png-1b61ef4c73872435b6be335e7f7da7f5.ctex"]
+source_file="res://assets/ascend_button_norm.png"
+dest_files=["res://.godot/imported/ascend_button_norm.png-8b14c019b276ec26e7ee44970890306a.ctex"]
 
 [params]
 

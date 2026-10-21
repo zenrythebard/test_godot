@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bifms7kq80csf"
-path="res://.godot/imported/ascend_button_norm.png-28ad21cc7e236aa3c732039b8a73d401.ctex"
+uid="uid://chr23i6jmwjrr"
+path="res://.godot/imported/move_wing_dif.png-ae9b36b6ca413c6496a8039a03b368e6.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://ascend_button_norm.png"
-dest_files=["res://.godot/imported/ascend_button_norm.png-28ad21cc7e236aa3c732039b8a73d401.ctex"]
+source_file="res://assets/move_wing_dif.png"
+dest_files=["res://.godot/imported/move_wing_dif.png-ae9b36b6ca413c6496a8039a03b368e6.ctex"]
 
 [params]
 

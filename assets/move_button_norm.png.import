@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://do0irbdy4ex4g"
-path="res://.godot/imported/container_dif2.png-4603f0ca9f97a8aa4b26277207f9296f.ctex"
+uid="uid://jo4k7p6ixd63"
+path="res://.godot/imported/move_button_norm.png-eac1aa7f6befe21567e1d8510ae3e6b9.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://container_dif2.png"
-dest_files=["res://.godot/imported/container_dif2.png-4603f0ca9f97a8aa4b26277207f9296f.ctex"]
+source_file="res://assets/move_button_norm.png"
+dest_files=["res://.godot/imported/move_button_norm.png-eac1aa7f6befe21567e1d8510ae3e6b9.ctex"]
 
 [params]
 

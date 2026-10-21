@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://rbxudggblidl"
-path="res://.godot/imported/attack_button_dif.png-626d413c5188ac21e7d748f2b73f6b4f.ctex"
+uid="uid://ckuiix2ljeq6o"
+path="res://.godot/imported/container_norm2.png-cfe22a072976b56fb605369fd220b1d8.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://attack_button_dif.png"
-dest_files=["res://.godot/imported/attack_button_dif.png-626d413c5188ac21e7d748f2b73f6b4f.ctex"]
+source_file="res://assets/container_norm2.png"
+dest_files=["res://.godot/imported/container_norm2.png-cfe22a072976b56fb605369fd220b1d8.ctex"]
 
 [params]
 

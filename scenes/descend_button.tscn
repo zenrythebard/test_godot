@@ -1,14 +1,15 @@
 [gd_scene format=3 uid="uid://byb5fa1ttvcn5"]
 
-[ext_resource type="Texture2D" uid="uid://do0irbdy4ex4g" path="res://container_dif2.png" id="1_3xvfq"]
-[ext_resource type="Texture2D" uid="uid://ckuiix2ljeq6o" path="res://container_norm2.png" id="2_la7ia"]
-[ext_resource type="Texture2D" uid="uid://ccuhskjarhdjd" path="res://inner_container_0.png" id="3_lsvkw"]
-[ext_resource type="Texture2D" uid="uid://d0utsx2qdrhiq" path="res://inner_container_1.png" id="4_3eupr"]
-[ext_resource type="Texture2D" uid="uid://dv3vpbp7e50pe" path="res://inner_container_2.png" id="5_5oq6a"]
-[ext_resource type="Texture2D" uid="uid://d3a7qykc7dekp" path="res://descend_button_dif.png" id="6_go07u"]
-[ext_resource type="Texture2D" uid="uid://c32qah41orw3g" path="res://descend_wing_dif.png" id="6_lsvkw"]
-[ext_resource type="Texture2D" uid="uid://bfprom2peugh" path="res://descend_wing_norm.png" id="7_3eupr"]
-[ext_resource type="Texture2D" uid="uid://3u44w5ays3ly" path="res://descend_button_norm.png" id="7_i3564"]
+[ext_resource type="Texture2D" uid="uid://do0irbdy4ex4g" path="res://assets/container_dif2.png" id="1_3xvfq"]
+[ext_resource type="Texture2D" uid="uid://ckuiix2ljeq6o" path="res://assets/container_norm2.png" id="2_la7ia"]
+[ext_resource type="Texture2D" uid="uid://ccuhskjarhdjd" path="res://assets/inner_container_0.png" id="3_lsvkw"]
+[ext_resource type="Texture2D" uid="uid://d0utsx2qdrhiq" path="res://assets/inner_container_1.png" id="4_3eupr"]
+[ext_resource type="Texture2D" uid="uid://dv3vpbp7e50pe" path="res://assets/inner_container_2.png" id="5_5oq6a"]
+[ext_resource type="Texture2D" uid="uid://d3a7qykc7dekp" path="res://assets/descend_button_dif.png" id="6_go07u"]
+[ext_resource type="Texture2D" uid="uid://c32qah41orw3g" path="res://assets/descend_wing_dif.png" id="6_lsvkw"]
+[ext_resource type="Texture2D" uid="uid://bfprom2peugh" path="res://assets/descend_wing_norm.png" id="7_3eupr"]
+[ext_resource type="Texture2D" uid="uid://3u44w5ays3ly" path="res://assets/descend_button_norm.png" id="7_i3564"]
+
 
 [sub_resource type="CanvasTexture" id="CanvasTexture_f2ffa"]
 diffuse_texture = ExtResource("1_3xvfq")

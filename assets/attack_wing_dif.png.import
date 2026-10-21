@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cdh3hlfxx5i8i"
-path="res://.godot/imported/attack_wing_norm.png-49acec50e7427ee0f57c5b00631db568.ctex"
+uid="uid://dqd1puopvm1x6"
+path="res://.godot/imported/attack_wing_dif.png-c94bc64f0df3f68d6de3ea412d1d47b9.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://attack_wing_norm.png"
-dest_files=["res://.godot/imported/attack_wing_norm.png-49acec50e7427ee0f57c5b00631db568.ctex"]
+source_file="res://assets/attack_wing_dif.png"
+dest_files=["res://.godot/imported/attack_wing_dif.png-c94bc64f0df3f68d6de3ea412d1d47b9.ctex"]
 
 [params]
 

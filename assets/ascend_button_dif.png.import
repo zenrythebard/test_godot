@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://da6rdejegt2g2"
-path="res://.godot/imported/move_button_dif.png-97b3a9dfa1f39366814a0caf3efa2387.ctex"
+uid="uid://cthg6e8djvos5"
+path="res://.godot/imported/ascend_button_dif.png-6b15578d25730c0a3242b1a91d467822.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://move_button_dif.png"
-dest_files=["res://.godot/imported/move_button_dif.png-97b3a9dfa1f39366814a0caf3efa2387.ctex"]
+source_file="res://assets/ascend_button_dif.png"
+dest_files=["res://.godot/imported/ascend_button_dif.png-6b15578d25730c0a3242b1a91d467822.ctex"]
 
 [params]
 

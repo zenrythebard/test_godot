@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dv3vpbp7e50pe"
-path="res://.godot/imported/inner_container_2.png-fb9da15ba400e4bbb89997d4b6bc029d.ctex"
+uid="uid://3u44w5ays3ly"
+path="res://.godot/imported/descend_button_norm.png-1067989ead07ff8924d4853495eec50c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://inner_container_2.png"
-dest_files=["res://.godot/imported/inner_container_2.png-fb9da15ba400e4bbb89997d4b6bc029d.ctex"]
+source_file="res://assets/descend_button_norm.png"
+dest_files=["res://.godot/imported/descend_button_norm.png-1067989ead07ff8924d4853495eec50c.ctex"]
 
 [params]
 

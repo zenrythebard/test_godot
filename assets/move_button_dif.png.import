@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://chr23i6jmwjrr"
-path="res://.godot/imported/move_wing_dif.png-6d1bd31e8a1cbb3b66d78adb7528293c.ctex"
+uid="uid://da6rdejegt2g2"
+path="res://.godot/imported/move_button_dif.png-ecbfe420699b69292242fd7f9affe9dd.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://move_wing_dif.png"
-dest_files=["res://.godot/imported/move_wing_dif.png-6d1bd31e8a1cbb3b66d78adb7528293c.ctex"]
+source_file="res://assets/move_button_dif.png"
+dest_files=["res://.godot/imported/move_button_dif.png-ecbfe420699b69292242fd7f9affe9dd.ctex"]
 
 [params]
 

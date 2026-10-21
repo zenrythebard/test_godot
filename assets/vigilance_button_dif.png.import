@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dqd1puopvm1x6"
-path="res://.godot/imported/attack_wing_dif.png-749b8290e478c39355fd63b501687b76.ctex"
+uid="uid://b4idl44gywjrq"
+path="res://.godot/imported/vigilance_button_dif.png-1ec5c4af02f316471f34e62d26e54b92.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://attack_wing_dif.png"
-dest_files=["res://.godot/imported/attack_wing_dif.png-749b8290e478c39355fd63b501687b76.ctex"]
+source_file="res://assets/vigilance_button_dif.png"
+dest_files=["res://.godot/imported/vigilance_button_dif.png-1ec5c4af02f316471f34e62d26e54b92.ctex"]
 
 [params]
 

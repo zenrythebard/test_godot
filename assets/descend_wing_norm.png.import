@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ca427palxgt0f"
-path="res://.godot/imported/container_dif.png-83d4b2f29a2497f651693ab85c00bf58.ctex"
+uid="uid://bfprom2peugh"
+path="res://.godot/imported/descend_wing_norm.png-4f6d4f04528da793b53b22ddd42e8b05.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://container_dif.png"
-dest_files=["res://.godot/imported/container_dif.png-83d4b2f29a2497f651693ab85c00bf58.ctex"]
+source_file="res://assets/descend_wing_norm.png"
+dest_files=["res://.godot/imported/descend_wing_norm.png-4f6d4f04528da793b53b22ddd42e8b05.ctex"]
 
 [params]
 

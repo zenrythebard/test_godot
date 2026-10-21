@@ -1,0 +1,508 @@
+[gd_scene format=3 uid="uid://c07wa3cggmyt4"]
+
+[ext_resource type="StyleBox" uid="uid://cxw25wwqg0xjh" path="res://button_style_box.tres" id="1_a0oud"]
+[ext_resource type="Script" uid="uid://b3stj76u0n218" path="res://buttons/button_visual.gd" id="2_87ixm"]
+[ext_resource type="Texture2D" uid="uid://do0irbdy4ex4g" path="res://assets/container_dif2.png" id="3_s6h46"]
+[ext_resource type="Texture2D" uid="uid://ckuiix2ljeq6o" path="res://assets/container_norm2.png" id="4_87ixm"]
+[ext_resource type="Texture2D" uid="uid://ccuhskjarhdjd" path="res://assets/inner_container_0.png" id="5_s6h46"]
+[ext_resource type="Texture2D" uid="uid://d0utsx2qdrhiq" path="res://assets/inner_container_1.png" id="6_87ixm"]
+[ext_resource type="Texture2D" uid="uid://dv3vpbp7e50pe" path="res://assets/inner_container_2.png" id="7_4s7w0"]
+[ext_resource type="Texture2D" uid="uid://dqd1puopvm1x6" path="res://assets/attack_wing_dif.png" id="8_s6h46"]
+[ext_resource type="Texture2D" uid="uid://cdh3hlfxx5i8i" path="res://assets/attack_wing_norm.png" id="9_87ixm"]
+[ext_resource type="Texture2D" uid="uid://rbxudggblidl" path="res://assets/attack_button_dif.png" id="10_4s7w0"]
+[ext_resource type="Texture2D" uid="uid://5vbu1l0i0kra" path="res://assets/attack_button_norm.png" id="11_ivcta"]
+
+[sub_resource type="CanvasTexture" id="CanvasTexture_f2ffa"]
+diffuse_texture = ExtResource("3_s6h46")
+normal_texture = ExtResource("4_87ixm")
+
+[sub_resource type="CanvasTexture" id="CanvasTexture_dvb8t"]
+diffuse_texture = ExtResource("8_s6h46")
+normal_texture = ExtResource("9_87ixm")
+
+[sub_resource type="CanvasTexture" id="CanvasTexture_iifhh"]
+diffuse_texture = ExtResource("10_4s7w0")
+normal_texture = ExtResource("11_ivcta")
+
+[sub_resource type="Gradient" id="Gradient_11u48"]
+colors = PackedColorArray(1, 1, 1, 1, 0, 0, 0, 0)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_su8vd"]
+gradient = SubResource("Gradient_11u48")
+fill = 1
+fill_from = Vector2(0.5, 0.5046729)
+fill_to = Vector2(0.8457944, 0.17289719)
+
+[sub_resource type="Animation" id="Animation_om1r2"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("MovingLight:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-71, -103)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Button_Visual/InnerHover:visible")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Button_Visual/InnerHover:modulate")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Button_Visual/InnerClick:modulate")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("Button_Visual/InnerClick:visible")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("GoldLight:energy")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("GoldLightObject:energy")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+
+[sub_resource type="Animation" id="Animation_ok286"]
+resource_name = "click_animation"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Button_Visual/InnerClick:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0.13333334, 0.3),
+"transitions": PackedFloat32Array(1, 1.7411013),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Button_Visual/InnerClick:visible")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0.06666667),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Button_Visual/InnerHover:visible")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0.033333335),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Button_Visual/InnerHover:modulate")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("GoldLight:energy")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0.03333334, 0.3),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [7.21, 12.0]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("GoldLightObject:energy")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0.033333335, 0.3),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [0.0, 0.3]
+}
+
+[sub_resource type="Animation" id="Animation_s6h46"]
+resource_name = "click_to_neutral_animation"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Button_Visual/InnerClick:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.33333334),
+"transitions": PackedFloat32Array(1.7411013, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Button_Visual/InnerClick:visible")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0.033333335, 0.8333333),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [true, false]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Button_Visual/InnerHover:visible")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0.033333335, 0.8333333),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [true, false]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Button_Visual/InnerHover:modulate")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0, 0.33333334),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("GoldLight:energy")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0.06666666, 0.3),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [12.0, 0.0]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("GoldLightObject:energy")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0.03333333, 0.3),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [0.3, 0.0]
+}
+
+[sub_resource type="Animation" id="Animation_hwkoo"]
+resource_name = "hover_animation"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Button_Visual/InnerHover:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0.06666666, 0.26666668),
+"transitions": PackedFloat32Array(1, 0.73204285),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Button_Visual/InnerHover:visible")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0.06666667),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Button_Visual/InnerClick:visible")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0.033333335),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("GoldLight:energy")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0.06666667, 0.26666668),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [0.0, 7.21]
+}
+
+[sub_resource type="Animation" id="Animation_yatip"]
+resource_name = "hover_to_neutral_animation"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Button_Visual/InnerHover:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.3333333),
+"transitions": PackedFloat32Array(0.73204285, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Button_Visual/InnerHover:visible")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.8666667),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [true, false]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Button_Visual/InnerClick:visible")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0.033333335),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("GoldLight:energy")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0.03333333, 0.3),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [7.21, 0.0]
+}
+
+[sub_resource type="Animation" id="Animation_070kq"]
+resource_name = "idle_animation"
+length = 9.0
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("MovingLight:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0.0333333, 2.3666666, 5.766667, 8.833333),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(-71, -103), Vector2(161, 52.999985), Vector2(232, -178.99998), Vector2(-127, -119.999985)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_ok286"]
+_data = {
+&"RESET": SubResource("Animation_om1r2"),
+&"click_animation": SubResource("Animation_ok286"),
+&"click_to_neutral_animation": SubResource("Animation_s6h46"),
+&"hover_animation": SubResource("Animation_hwkoo"),
+&"hover_to_neutral_animation": SubResource("Animation_yatip"),
+&"idle_animation": SubResource("Animation_070kq")
+}
+
+[node name="Attack_Button" type="Node2D" unique_id=1960019258]
+
+[node name="Button" type="Button" parent="." unique_id=816579383]
+offset_left = -84.0
+offset_top = -62.0
+offset_right = 82.0
+offset_bottom = 67.0
+theme_override_styles/normal = ExtResource("1_a0oud")
+theme_override_styles/pressed = ExtResource("1_a0oud")
+theme_override_styles/hover = ExtResource("1_a0oud")
+
+[node name="Button_Visual" type="Node2D" parent="." unique_id=2111148232]
+scale = Vector2(0.1, 0.1)
+script = ExtResource("2_87ixm")
+
+[node name="Container" type="Sprite2D" parent="Button_Visual" unique_id=1249157264]
+light_mask = 3
+texture = SubResource("CanvasTexture_f2ffa")
+
+[node name="InnerBase" type="Sprite2D" parent="Button_Visual" unique_id=2051956585]
+scale = Vector2(0.99999994, 0.99999994)
+texture = ExtResource("5_s6h46")
+
+[node name="InnerHover" type="Sprite2D" parent="Button_Visual" unique_id=1785406294]
+visible = false
+self_modulate = Color(1, 1, 1, 0.84313726)
+scale = Vector2(0.99999976, 0.99999976)
+texture = ExtResource("6_87ixm")
+
+[node name="InnerClick" type="Sprite2D" parent="Button_Visual" unique_id=1575378755]
+visible = false
+self_modulate = Color(1, 1, 1, 0.8117647)
+scale = Vector2(0.99999976, 0.99999976)
+texture = ExtResource("7_4s7w0")
+
+[node name="IconWing" type="Sprite2D" parent="Button_Visual" unique_id=1007076004]
+light_mask = 5
+position = Vector2(-30, -30)
+scale = Vector2(1.2599999, 1.2599999)
+texture = SubResource("CanvasTexture_dvb8t")
+
+[node name="IconAttack" type="Sprite2D" parent="Button_Visual" unique_id=622939292]
+light_mask = 5
+position = Vector2(-30, -30)
+scale = Vector2(1.26, 1.26)
+texture = SubResource("CanvasTexture_iifhh")
+
+[node name="PointLight2D2" type="PointLight2D" parent="." unique_id=408077892]
+position = Vector2(-323.64056, 277)
+scale = Vector2(26.011232, 23.888674)
+energy = 0.9
+texture = SubResource("GradientTexture2D_su8vd")
+height = 1024.0
+
+[node name="PointLight2D3" type="PointLight2D" parent="." unique_id=325359030]
+position = Vector2(359.35953, 14)
+scale = Vector2(22.612795, 21.224611)
+energy = 1.2
+texture = SubResource("GradientTexture2D_su8vd")
+height = 1024.0
+
+[node name="PointLight2D" type="PointLight2D" parent="." unique_id=332837767]
+position = Vector2(12, 24.000008)
+scale = Vector2(3.64148, 3.603029)
+energy = 0.75
+texture = SubResource("GradientTexture2D_su8vd")
+
+[node name="MovingLight" type="PointLight2D" parent="." unique_id=840146241]
+position = Vector2(-71, -103)
+scale = Vector2(20.47217, 18.849613)
+energy = 1.2
+texture = SubResource("GradientTexture2D_su8vd")
+
+[node name="GoldLight" type="PointLight2D" parent="." unique_id=1097882946]
+position = Vector2(4.7683716e-07, 5)
+rotation = -0.48894808
+scale = Vector2(3.3124998, 2.6746447)
+color = Color(0.9096951, 0.30098805, 0, 1)
+energy = 0.0
+range_item_cull_mask = 2
+texture = SubResource("GradientTexture2D_su8vd")
+height = 73.0
+
+[node name="GoldLightObject" type="PointLight2D" parent="." unique_id=2068429459]
+position = Vector2(4.7683716e-07, 5)
+rotation = -0.48894808
+scale = Vector2(3.3124998, 2.6746447)
+color = Color(0.9098039, 0.3019608, 0, 1)
+energy = 0.0
+range_item_cull_mask = 4
+texture = SubResource("GradientTexture2D_su8vd")
+height = 44.0
+
+[node name="DirectionalLight2D" type="DirectionalLight2D" parent="." unique_id=948716022]
+position = Vector2(4.359436, -1982)
+color = Color(0, 0, 0, 1)
+energy = 0.62
+blend_mode = 2
+height = 1.0
+max_distance = 16384.0
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=1289863186]
+libraries/ = SubResource("AnimationLibrary_ok286")
+
+[connection signal="mouse_entered" from="Button" to="Button_Visual" method="_on_button_mouse_entered"]
+[connection signal="mouse_exited" from="Button" to="Button_Visual" method="_on_button_mouse_exited"]
+[connection signal="pressed" from="Button" to="Button_Visual" method="_on_button_pressed"]

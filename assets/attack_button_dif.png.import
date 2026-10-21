@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c32qah41orw3g"
-path="res://.godot/imported/descend_wing_dif.png-92ee439a5f9631cdb41e7ea3774b2b3a.ctex"
+uid="uid://rbxudggblidl"
+path="res://.godot/imported/attack_button_dif.png-f4477ee38bd7a01936f92ead639e955d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://descend_wing_dif.png"
-dest_files=["res://.godot/imported/descend_wing_dif.png-92ee439a5f9631cdb41e7ea3774b2b3a.ctex"]
+source_file="res://assets/attack_button_dif.png"
+dest_files=["res://.godot/imported/attack_button_dif.png-f4477ee38bd7a01936f92ead639e955d.ctex"]
 
 [params]
 

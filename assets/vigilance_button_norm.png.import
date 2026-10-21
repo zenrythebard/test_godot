@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://3u44w5ays3ly"
-path="res://.godot/imported/descend_button_norm.png-d4bfcc8fdeefe668953481caf1f01c25.ctex"
+uid="uid://dbddv80kv4gw3"
+path="res://.godot/imported/vigilance_button_norm.png-e3e6811b0dbc90e021bdbe2119a7b4ed.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://descend_button_norm.png"
-dest_files=["res://.godot/imported/descend_button_norm.png-d4bfcc8fdeefe668953481caf1f01c25.ctex"]
+source_file="res://assets/vigilance_button_norm.png"
+dest_files=["res://.godot/imported/vigilance_button_norm.png-e3e6811b0dbc90e021bdbe2119a7b4ed.ctex"]
 
 [params]
 

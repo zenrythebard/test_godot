@@ -1,0 +1,8 @@
+[gd_scene format=3 uid="uid://dgx8ihqcidla4"]
+
+[ext_resource type="PackedScene" uid="uid://c07wa3cggmyt4" path="res://buttons/attack_button.tscn" id="1_epdiv"]
+
+[node name="Node2D" type="Node2D" unique_id=790410922]
+
+[node name="Attack_Button" parent="." unique_id=1960019258 instance=ExtResource("1_epdiv")]
+position = Vector2(187, 362)
