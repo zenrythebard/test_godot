@@ -1,8 +1,28 @@
 [gd_scene format=3 uid="uid://dgx8ihqcidla4"]
 
-[ext_resource type="PackedScene" uid="uid://c07wa3cggmyt4" path="res://buttons/attack_button.tscn" id="1_epdiv"]
+[ext_resource type="PackedScene" uid="uid://c07wa3cggmyt4" path="res://buttons/button_attack.tscn" id="1_epdiv"]
+[ext_resource type="PackedScene" uid="uid://d3ywwgai754ef" path="res://buttons/button_move.tscn" id="2_5gaqk"]
+[ext_resource type="PackedScene" uid="uid://dr3pxatarlhjc" path="res://buttons/button_vigilance.tscn" id="3_uh4wq"]
+[ext_resource type="PackedScene" uid="uid://btcyhisyb1fk2" path="res://buttons/button_ascend_descend.tscn" id="4_mg5yg"]
 
 [node name="Node2D" type="Node2D" unique_id=790410922]
 
 [node name="Attack_Button" parent="." unique_id=1960019258 instance=ExtResource("1_epdiv")]
-position = Vector2(187, 362)
+position = Vector2(166, 574)
+
+[node name="Move_Button" parent="." unique_id=539965531 instance=ExtResource("2_5gaqk")]
+position = Vector2(420, 571)
+
+[node name="Vigilance_Button" parent="." unique_id=528827305 instance=ExtResource("3_uh4wq")]
+position = Vector2(678, 572)
+
+[node name="Ascend_Button" parent="." unique_id=713077905 instance=ExtResource("4_mg5yg")]
+position = Vector2(921, 575)
+
+[node name="DirectionalLight2D" type="DirectionalLight2D" parent="." unique_id=1004089951]
+position = Vector2(4.359436, -1982)
+color = Color(0, 0, 0, 1)
+energy = 0.62
+blend_mode = 2
+height = 1.0
+max_distance = 16384.0

@@ -1,0 +1,457 @@
+[gd_scene format=3 uid="uid://btcyhisyb1fk2"]
+
+[ext_resource type="StyleBox" uid="uid://cxw25wwqg0xjh" path="res://button_style_box.tres" id="1_sgdwx"]
+[ext_resource type="Script" uid="uid://dpyu32sh13rr5" path="res://buttons/script_button_toggle.gd" id="2_op4me"]
+[ext_resource type="Texture2D" uid="uid://do0irbdy4ex4g" path="res://assets/container_dif2.png" id="3_op4me"]
+[ext_resource type="Texture2D" uid="uid://ckuiix2ljeq6o" path="res://assets/container_norm2.png" id="4_wxnv0"]
+[ext_resource type="Texture2D" uid="uid://ccuhskjarhdjd" path="res://assets/inner_container_0.png" id="5_mcqbo"]
+[ext_resource type="Texture2D" uid="uid://d0utsx2qdrhiq" path="res://assets/inner_container_1.png" id="6_h2wt5"]
+[ext_resource type="Texture2D" uid="uid://dv3vpbp7e50pe" path="res://assets/inner_container_2.png" id="7_eqx1d"]
+[ext_resource type="Texture2D" uid="uid://c32qah41orw3g" path="res://assets/descend_wing_dif.png" id="8_op4me"]
+[ext_resource type="Texture2D" uid="uid://bfprom2peugh" path="res://assets/descend_wing_norm.png" id="9_wxnv0"]
+[ext_resource type="Texture2D" uid="uid://cthg6e8djvos5" path="res://assets/ascend_button_dif.png" id="10_mcqbo"]
+[ext_resource type="Texture2D" uid="uid://bifms7kq80csf" path="res://assets/ascend_button_norm.png" id="11_h2wt5"]
+[ext_resource type="Texture2D" uid="uid://d3a7qykc7dekp" path="res://assets/descend_button_dif.png" id="12_eqx1d"]
+[ext_resource type="Texture2D" uid="uid://3u44w5ays3ly" path="res://assets/descend_button_norm.png" id="13_ghl05"]
+
+[sub_resource type="CanvasTexture" id="CanvasTexture_f2ffa"]
+diffuse_texture = ExtResource("3_op4me")
+normal_texture = ExtResource("4_wxnv0")
+
+[sub_resource type="CanvasTexture" id="CanvasTexture_dvb8t"]
+diffuse_texture = ExtResource("8_op4me")
+normal_texture = ExtResource("9_wxnv0")
+
+[sub_resource type="CanvasTexture" id="CanvasTexture_smcr4"]
+diffuse_texture = ExtResource("12_eqx1d")
+normal_texture = ExtResource("13_ghl05")
+
+[sub_resource type="CanvasTexture" id="CanvasTexture_iifhh"]
+diffuse_texture = ExtResource("10_mcqbo")
+normal_texture = ExtResource("11_h2wt5")
+
+[sub_resource type="Gradient" id="Gradient_11u48"]
+colors = PackedColorArray(1, 1, 1, 1, 0, 0, 0, 0)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_su8vd"]
+gradient = SubResource("Gradient_11u48")
+fill = 1
+fill_from = Vector2(0.5, 0.5046729)
+fill_to = Vector2(0.8457944, 0.17289719)
+
+[sub_resource type="Animation" id="Animation_om1r2"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("MovingLight:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-71, -103)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Button_Visual/InnerHover:visible")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Button_Visual/InnerHover:modulate")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Button_Visual/InnerClick:modulate")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("Button_Visual/InnerClick:visible")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("GoldLight:energy")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("GoldLightObject:energy")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/7/type = "value"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("Button_Visual/IconAscend:scale")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1.205, 1.205)]
+}
+tracks/8/type = "value"
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/path = NodePath("Button_Visual/Node2D:scale")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_op4me"]
+resource_name = "ascend_to_descend"
+length = 3.0000000000000004
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Button_Visual/IconAscend:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.2),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(1.205, 1.205), Vector2(1.205, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Button_Visual/Node2D:scale")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0.4, 0.56666666),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(1, 0), Vector2(1, 1)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Button_Visual/InnerHover:modulate")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0.033333335),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Button_Visual/InnerHover:visible")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0.033333335),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("Button_Visual/InnerClick:visible")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0.03333333),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+
+[sub_resource type="Animation" id="Animation_hwkoo"]
+resource_name = "hover_animation"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Button_Visual/InnerHover:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0.06666666, 0.26666668),
+"transitions": PackedFloat32Array(1, 0.73204285),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Button_Visual/InnerHover:visible")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0.06666667),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Button_Visual/InnerClick:visible")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0.033333335),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("GoldLight:energy")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0.06666667, 0.26666668),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [0.0, 7.21]
+}
+
+[sub_resource type="Animation" id="Animation_yatip"]
+resource_name = "hover_to_neutral_animation"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Button_Visual/InnerHover:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.3333333),
+"transitions": PackedFloat32Array(0.73204285, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Button_Visual/InnerHover:visible")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.8666667),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [true, false]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Button_Visual/InnerClick:visible")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0.033333335),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("GoldLight:energy")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0.03333333, 0.3),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [7.21, 0.0]
+}
+
+[sub_resource type="Animation" id="Animation_070kq"]
+resource_name = "idle_animation"
+length = 9.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("MovingLight:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0.0333333, 2.3666666, 5.766667, 8.833333),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(-71, -103), Vector2(161, 52.999985), Vector2(232, -178.99998), Vector2(-127, -119.999985)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_ok286"]
+_data = {
+&"RESET": SubResource("Animation_om1r2"),
+&"ascend_to_descend": SubResource("Animation_op4me"),
+&"hover_animation": SubResource("Animation_hwkoo"),
+&"hover_to_neutral_animation": SubResource("Animation_yatip"),
+&"idle_animation": SubResource("Animation_070kq")
+}
+
+[node name="Ascend_Button" type="Node2D" unique_id=1960019258]
+
+[node name="Button" type="Button" parent="." unique_id=816579383]
+offset_left = -84.0
+offset_top = -62.0
+offset_right = 82.0
+offset_bottom = 67.0
+theme_override_styles/normal = ExtResource("1_sgdwx")
+theme_override_styles/pressed = ExtResource("1_sgdwx")
+theme_override_styles/hover = ExtResource("1_sgdwx")
+
+[node name="Button_Visual" type="Node2D" parent="." unique_id=2111148232]
+scale = Vector2(0.1, 0.1)
+script = ExtResource("2_op4me")
+
+[node name="Container" type="Sprite2D" parent="Button_Visual" unique_id=1249157264]
+light_mask = 98304
+texture = SubResource("CanvasTexture_f2ffa")
+
+[node name="InnerBase" type="Sprite2D" parent="Button_Visual" unique_id=2051956585]
+light_mask = 32768
+scale = Vector2(0.99999994, 0.99999994)
+texture = ExtResource("5_mcqbo")
+
+[node name="InnerHover" type="Sprite2D" parent="Button_Visual" unique_id=1785406294]
+visible = false
+self_modulate = Color(1, 1, 1, 0.84313726)
+light_mask = 32768
+scale = Vector2(0.99999976, 0.99999976)
+texture = ExtResource("6_h2wt5")
+
+[node name="InnerClick" type="Sprite2D" parent="Button_Visual" unique_id=1575378755]
+visible = false
+self_modulate = Color(1, 1, 1, 0.8117647)
+light_mask = 32768
+scale = Vector2(0.99999976, 0.99999976)
+texture = ExtResource("7_eqx1d")
+
+[node name="Node2D" type="Node2D" parent="Button_Visual" unique_id=554130608]
+
+[node name="IconWing" type="Sprite2D" parent="Button_Visual/Node2D" unique_id=1007076004]
+light_mask = 163840
+position = Vector2(30.079958, 0.079960816)
+scale = Vector2(1.0449998, 1.0449998)
+texture = SubResource("CanvasTexture_dvb8t")
+
+[node name="IconDescend" type="Sprite2D" parent="Button_Visual/Node2D" unique_id=1965816297]
+light_mask = 163840
+position = Vector2(0.07996272, 10.079964)
+scale = Vector2(1.0449998, 1.0449998)
+texture = SubResource("CanvasTexture_smcr4")
+
+[node name="IconAscend" type="Sprite2D" parent="Button_Visual" unique_id=622939292]
+light_mask = 163840
+position = Vector2(40, 9.999996)
+scale = Vector2(1.205, 1.205)
+texture = SubResource("CanvasTexture_iifhh")
+
+[node name="PointLight2D2" type="PointLight2D" parent="." unique_id=408077892]
+position = Vector2(-323.64056, 277)
+scale = Vector2(26.011232, 23.888674)
+energy = 0.9
+range_item_cull_mask = 32768
+texture = SubResource("GradientTexture2D_su8vd")
+height = 1024.0
+
+[node name="PointLight2D3" type="PointLight2D" parent="." unique_id=325359030]
+position = Vector2(359.35953, 14)
+scale = Vector2(22.612795, 21.224611)
+energy = 1.2
+range_item_cull_mask = 32768
+texture = SubResource("GradientTexture2D_su8vd")
+height = 1024.0
+
+[node name="PointLight2D" type="PointLight2D" parent="." unique_id=332837767]
+position = Vector2(12, 24.000008)
+scale = Vector2(3.64148, 3.603029)
+energy = 0.75
+range_item_cull_mask = 32768
+texture = SubResource("GradientTexture2D_su8vd")
+
+[node name="MovingLight" type="PointLight2D" parent="." unique_id=840146241]
+position = Vector2(-71, -103)
+scale = Vector2(20.47217, 18.849613)
+energy = 1.2
+range_item_cull_mask = 32768
+texture = SubResource("GradientTexture2D_su8vd")
+
+[node name="GoldLight" type="PointLight2D" parent="." unique_id=1097882946]
+position = Vector2(4.7683716e-07, 5)
+rotation = -0.48894808
+scale = Vector2(3.3124998, 2.6746447)
+color = Color(0.9096951, 0.30098805, 0, 1)
+energy = 0.0
+range_item_cull_mask = 65536
+texture = SubResource("GradientTexture2D_su8vd")
+height = 73.0
+
+[node name="GoldLightObject" type="PointLight2D" parent="." unique_id=2068429459]
+position = Vector2(4.7683716e-07, 5)
+rotation = -0.48894808
+scale = Vector2(3.3124998, 2.6746447)
+color = Color(0.9098039, 0.3019608, 0, 1)
+energy = 0.0
+range_item_cull_mask = 131072
+texture = SubResource("GradientTexture2D_su8vd")
+height = 44.0
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=1289863186]
+libraries/ = SubResource("AnimationLibrary_ok286")
+
+[connection signal="mouse_entered" from="Button" to="Button_Visual" method="_on_button_mouse_entered"]
+[connection signal="mouse_exited" from="Button" to="Button_Visual" method="_on_button_mouse_exited"]
+[connection signal="pressed" from="Button" to="Button_Visual" method="_on_button_pressed"]

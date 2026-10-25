@@ -1,28 +1,28 @@
-[gd_scene format=3 uid="uid://c07wa3cggmyt4"]
+[gd_scene format=3 uid="uid://d3ywwgai754ef"]
 
-[ext_resource type="StyleBox" uid="uid://cxw25wwqg0xjh" path="res://button_style_box.tres" id="1_a0oud"]
-[ext_resource type="Script" uid="uid://b3stj76u0n218" path="res://buttons/button_visual.gd" id="2_87ixm"]
-[ext_resource type="Texture2D" uid="uid://do0irbdy4ex4g" path="res://assets/container_dif2.png" id="3_s6h46"]
-[ext_resource type="Texture2D" uid="uid://ckuiix2ljeq6o" path="res://assets/container_norm2.png" id="4_87ixm"]
-[ext_resource type="Texture2D" uid="uid://ccuhskjarhdjd" path="res://assets/inner_container_0.png" id="5_s6h46"]
-[ext_resource type="Texture2D" uid="uid://d0utsx2qdrhiq" path="res://assets/inner_container_1.png" id="6_87ixm"]
-[ext_resource type="Texture2D" uid="uid://dv3vpbp7e50pe" path="res://assets/inner_container_2.png" id="7_4s7w0"]
-[ext_resource type="Texture2D" uid="uid://dqd1puopvm1x6" path="res://assets/attack_wing_dif.png" id="8_s6h46"]
-[ext_resource type="Texture2D" uid="uid://cdh3hlfxx5i8i" path="res://assets/attack_wing_norm.png" id="9_87ixm"]
-[ext_resource type="Texture2D" uid="uid://rbxudggblidl" path="res://assets/attack_button_dif.png" id="10_4s7w0"]
-[ext_resource type="Texture2D" uid="uid://5vbu1l0i0kra" path="res://assets/attack_button_norm.png" id="11_ivcta"]
+[ext_resource type="StyleBox" uid="uid://cxw25wwqg0xjh" path="res://button_style_box.tres" id="1_a1ox6"]
+[ext_resource type="Script" uid="uid://b3stj76u0n218" path="res://buttons/script_button_visual.gd" id="2_a1ox6"]
+[ext_resource type="Texture2D" uid="uid://do0irbdy4ex4g" path="res://assets/container_dif2.png" id="3_k3wmd"]
+[ext_resource type="Texture2D" uid="uid://ckuiix2ljeq6o" path="res://assets/container_norm2.png" id="4_aeo3l"]
+[ext_resource type="Texture2D" uid="uid://ccuhskjarhdjd" path="res://assets/inner_container_0.png" id="5_t071n"]
+[ext_resource type="Texture2D" uid="uid://d0utsx2qdrhiq" path="res://assets/inner_container_1.png" id="6_fvwor"]
+[ext_resource type="Texture2D" uid="uid://dv3vpbp7e50pe" path="res://assets/inner_container_2.png" id="7_mhqaq"]
+[ext_resource type="Texture2D" uid="uid://da6rdejegt2g2" path="res://assets/move_button_dif.png" id="8_a1ox6"]
+[ext_resource type="Texture2D" uid="uid://jo4k7p6ixd63" path="res://assets/move_button_norm.png" id="9_11bwo"]
+[ext_resource type="Texture2D" uid="uid://chr23i6jmwjrr" path="res://assets/move_wing_dif.png" id="10_k3wmd"]
+[ext_resource type="Texture2D" uid="uid://bwe0e3c4sy0bu" path="res://assets/move_wing_norm.png" id="11_aeo3l"]
 
 [sub_resource type="CanvasTexture" id="CanvasTexture_f2ffa"]
-diffuse_texture = ExtResource("3_s6h46")
-normal_texture = ExtResource("4_87ixm")
-
-[sub_resource type="CanvasTexture" id="CanvasTexture_dvb8t"]
-diffuse_texture = ExtResource("8_s6h46")
-normal_texture = ExtResource("9_87ixm")
+diffuse_texture = ExtResource("3_k3wmd")
+normal_texture = ExtResource("4_aeo3l")
 
 [sub_resource type="CanvasTexture" id="CanvasTexture_iifhh"]
-diffuse_texture = ExtResource("10_4s7w0")
-normal_texture = ExtResource("11_ivcta")
+diffuse_texture = ExtResource("8_a1ox6")
+normal_texture = ExtResource("9_11bwo")
+
+[sub_resource type="CanvasTexture" id="CanvasTexture_dvb8t"]
+diffuse_texture = ExtResource("10_k3wmd")
+normal_texture = ExtResource("11_aeo3l")
 
 [sub_resource type="Gradient" id="Gradient_11u48"]
 colors = PackedColorArray(1, 1, 1, 1, 0, 0, 0, 0)
@@ -375,7 +375,6 @@ tracks/3/keys = {
 [sub_resource type="Animation" id="Animation_070kq"]
 resource_name = "idle_animation"
 length = 9.0
-loop_mode = 1
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
@@ -399,57 +398,62 @@ _data = {
 &"idle_animation": SubResource("Animation_070kq")
 }
 
-[node name="Attack_Button" type="Node2D" unique_id=1960019258]
+[node name="Move_Button" type="Node2D" unique_id=1960019258]
 
 [node name="Button" type="Button" parent="." unique_id=816579383]
 offset_left = -84.0
 offset_top = -62.0
 offset_right = 82.0
 offset_bottom = 67.0
-theme_override_styles/normal = ExtResource("1_a0oud")
-theme_override_styles/pressed = ExtResource("1_a0oud")
-theme_override_styles/hover = ExtResource("1_a0oud")
+theme_override_styles/normal = ExtResource("1_a1ox6")
+theme_override_styles/pressed = ExtResource("1_a1ox6")
+theme_override_styles/hover = ExtResource("1_a1ox6")
 
 [node name="Button_Visual" type="Node2D" parent="." unique_id=2111148232]
 scale = Vector2(0.1, 0.1)
-script = ExtResource("2_87ixm")
+script = ExtResource("2_a1ox6")
 
 [node name="Container" type="Sprite2D" parent="Button_Visual" unique_id=1249157264]
-light_mask = 3
+light_mask = 24
 texture = SubResource("CanvasTexture_f2ffa")
 
 [node name="InnerBase" type="Sprite2D" parent="Button_Visual" unique_id=2051956585]
+light_mask = 8
 scale = Vector2(0.99999994, 0.99999994)
-texture = ExtResource("5_s6h46")
+texture = ExtResource("5_t071n")
 
 [node name="InnerHover" type="Sprite2D" parent="Button_Visual" unique_id=1785406294]
 visible = false
 self_modulate = Color(1, 1, 1, 0.84313726)
+light_mask = 8
 scale = Vector2(0.99999976, 0.99999976)
-texture = ExtResource("6_87ixm")
+texture = ExtResource("6_fvwor")
 
 [node name="InnerClick" type="Sprite2D" parent="Button_Visual" unique_id=1575378755]
 visible = false
 self_modulate = Color(1, 1, 1, 0.8117647)
+light_mask = 8
 scale = Vector2(0.99999976, 0.99999976)
-texture = ExtResource("7_4s7w0")
-
-[node name="IconWing" type="Sprite2D" parent="Button_Visual" unique_id=1007076004]
-light_mask = 5
-position = Vector2(-30, -30)
-scale = Vector2(1.2599999, 1.2599999)
-texture = SubResource("CanvasTexture_dvb8t")
+texture = ExtResource("7_mhqaq")
 
 [node name="IconAttack" type="Sprite2D" parent="Button_Visual" unique_id=622939292]
-light_mask = 5
+light_mask = 40
 position = Vector2(-30, -30)
 scale = Vector2(1.26, 1.26)
 texture = SubResource("CanvasTexture_iifhh")
 
+[node name="IconWing" type="Sprite2D" parent="Button_Visual" unique_id=1007076004]
+light_mask = 40
+position = Vector2(-29.999996, -29.999996)
+scale = Vector2(1.2599998, 1.2599998)
+texture = SubResource("CanvasTexture_dvb8t")
+
 [node name="PointLight2D2" type="PointLight2D" parent="." unique_id=408077892]
+light_mask = 8
 position = Vector2(-323.64056, 277)
 scale = Vector2(26.011232, 23.888674)
 energy = 0.9
+range_item_cull_mask = 8
 texture = SubResource("GradientTexture2D_su8vd")
 height = 1024.0
 
@@ -457,6 +461,7 @@ height = 1024.0
 position = Vector2(359.35953, 14)
 scale = Vector2(22.612795, 21.224611)
 energy = 1.2
+range_item_cull_mask = 8
 texture = SubResource("GradientTexture2D_su8vd")
 height = 1024.0
 
@@ -464,12 +469,14 @@ height = 1024.0
 position = Vector2(12, 24.000008)
 scale = Vector2(3.64148, 3.603029)
 energy = 0.75
+range_item_cull_mask = 8
 texture = SubResource("GradientTexture2D_su8vd")
 
 [node name="MovingLight" type="PointLight2D" parent="." unique_id=840146241]
 position = Vector2(-71, -103)
 scale = Vector2(20.47217, 18.849613)
 energy = 1.2
+range_item_cull_mask = 8
 texture = SubResource("GradientTexture2D_su8vd")
 
 [node name="GoldLight" type="PointLight2D" parent="." unique_id=1097882946]
@@ -478,7 +485,7 @@ rotation = -0.48894808
 scale = Vector2(3.3124998, 2.6746447)
 color = Color(0.9096951, 0.30098805, 0, 1)
 energy = 0.0
-range_item_cull_mask = 2
+range_item_cull_mask = 16
 texture = SubResource("GradientTexture2D_su8vd")
 height = 73.0
 
@@ -488,17 +495,9 @@ rotation = -0.48894808
 scale = Vector2(3.3124998, 2.6746447)
 color = Color(0.9098039, 0.3019608, 0, 1)
 energy = 0.0
-range_item_cull_mask = 4
+range_item_cull_mask = 32
 texture = SubResource("GradientTexture2D_su8vd")
 height = 44.0
-
-[node name="DirectionalLight2D" type="DirectionalLight2D" parent="." unique_id=948716022]
-position = Vector2(4.359436, -1982)
-color = Color(0, 0, 0, 1)
-energy = 0.62
-blend_mode = 2
-height = 1.0
-max_distance = 16384.0
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=1289863186]
 libraries/ = SubResource("AnimationLibrary_ok286")
