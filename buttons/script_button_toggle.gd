@@ -1,5 +1,6 @@
 extends Node2D
 var state : int = 0
+var toggle : bool = false
 signal state_changed
 @onready var animation_player: AnimationPlayer = $"../AnimationPlayer"
 @onready var timer: Timer = $"../Timer"
@@ -18,12 +19,16 @@ func on_state_changed():
 		2: 
 			animation_player.play("hover_to_neutral_animation")
 		3: 
-			animation_player.play("click_animation")
-			await get_tree().create_timer(2).timeout
-			state = 4
-			emit_signal("state_changed")
-		4:
-			animation_player.play("click_to_neutral_animation")
+			if toggle:
+				animation_player.play("descend_to_ascend")
+				await get_tree().create_timer(1).timeout
+				toggle = false
+				state = 0
+			else:
+				animation_player.play("ascend_to_descend")
+				await get_tree().create_timer(1).timeout
+				toggle = true
+				state = 0
 	print(animation_player.current_animation)
 
 func _on_button_pressed() -> void:
