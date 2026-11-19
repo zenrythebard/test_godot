@@ -11,6 +11,10 @@
 [ext_resource type="Texture2D" uid="uid://cdh3hlfxx5i8i" path="res://assets/attack_wing_norm.png" id="9_87ixm"]
 [ext_resource type="Texture2D" uid="uid://rbxudggblidl" path="res://assets/attack_button_dif.png" id="10_4s7w0"]
 [ext_resource type="Texture2D" uid="uid://5vbu1l0i0kra" path="res://assets/attack_button_norm.png" id="11_ivcta"]
+[ext_resource type="Texture2D" uid="uid://bfw0p5ru07f38" path="res://letters/A.png" id="12_2o6t5"]
+[ext_resource type="Texture2D" uid="uid://dw68ved8auqg3" path="res://letters/T.png" id="13_fgusp"]
+[ext_resource type="Texture2D" uid="uid://dba68e4w3npdr" path="res://letters/C.png" id="14_rulra"]
+[ext_resource type="Texture2D" uid="uid://be8hj3521sltg" path="res://letters/K.png" id="15_dtjd4"]
 
 [sub_resource type="CanvasTexture" id="CanvasTexture_f2ffa"]
 diffuse_texture = ExtResource("3_s6h46")
@@ -24,11 +28,11 @@ normal_texture = ExtResource("9_87ixm")
 diffuse_texture = ExtResource("10_4s7w0")
 normal_texture = ExtResource("11_ivcta")
 
-[sub_resource type="Gradient" id="Gradient_11u48"]
+[sub_resource type="Gradient" id="Gradient_2o6t5"]
 colors = PackedColorArray(1, 1, 1, 1, 0, 0, 0, 0)
 
 [sub_resource type="GradientTexture2D" id="GradientTexture2D_su8vd"]
-gradient = SubResource("Gradient_11u48")
+gradient = SubResource("Gradient_2o6t5")
 fill = 1
 fill_from = Vector2(0.5, 0.5046729)
 fill_to = Vector2(0.8457944, 0.17289719)
@@ -118,6 +122,42 @@ tracks/6/keys = {
 "transitions": PackedFloat32Array(1),
 "update": 0,
 "values": [0.0]
+}
+tracks/7/type = "value"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("Text:position")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-61, -76)]
+}
+tracks/8/type = "value"
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/path = NodePath("Text:scale")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0, 0)]
+}
+tracks/9/type = "value"
+tracks/9/imported = false
+tracks/9/enabled = true
+tracks/9/path = NodePath("Text:modulate")
+tracks/9/interp = 1
+tracks/9/loop_wrap = true
+tracks/9/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
 }
 
 [sub_resource type="Animation" id="Animation_ok286"]
@@ -388,6 +428,84 @@ tracks/0/keys = {
 "values": [Vector2(-71, -103), Vector2(161, 52.999985), Vector2(232, -178.99998), Vector2(-127, -119.999985)]
 }
 
+[sub_resource type="Animation" id="Animation_msjmc"]
+resource_name = "text"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Text:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(2.3841858e-07, -37)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Text:scale")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.2),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(0, 0), Vector2(0.2, 0.2)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Text:modulate")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0.06666667),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_2o6t5"]
+resource_name = "text_exit"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Text:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(2.3841858e-07, -37)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Text:scale")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.16666667),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(0.2, 0.2), Vector2(0.3, 0.3)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Text:modulate")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0.033333335, 0.23333333),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_ok286"]
 _data = {
 &"RESET": SubResource("Animation_om1r2"),
@@ -395,7 +513,93 @@ _data = {
 &"click_to_neutral_animation": SubResource("Animation_s6h46"),
 &"hover_animation": SubResource("Animation_hwkoo"),
 &"hover_to_neutral_animation": SubResource("Animation_yatip"),
-&"idle_animation": SubResource("Animation_070kq")
+&"idle_animation": SubResource("Animation_070kq"),
+&"text": SubResource("Animation_msjmc"),
+&"text_exit": SubResource("Animation_2o6t5")
+}
+
+[sub_resource type="Animation" id="Animation_fgusp"]
+resource_name = "text"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Text:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(2.3841858e-07, -37)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Text:scale")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.2),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(0, 0), Vector2(0.2, 0.2)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Text:modulate")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0.06666667),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_rulra"]
+resource_name = "text_exit"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Text:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(2.3841858e-07, -37)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Text:scale")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.16666667),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(0.2, 0.2), Vector2(0.3, 0.3)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Text:modulate")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0.033333335, 0.23333333),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_dtjd4"]
+_data = {
+&"text": SubResource("Animation_fgusp"),
+&"text_exit": SubResource("Animation_rulra")
 }
 
 [node name="Attack_Button" type="Node2D" unique_id=1960019258]
@@ -494,6 +698,38 @@ height = 44.0
 [node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=1289863186]
 libraries/ = SubResource("AnimationLibrary_ok286")
 
+[node name="Text" type="Node2D" parent="." unique_id=82534249]
+position = Vector2(-61, -76)
+scale = Vector2(1e-05, 1e-05)
+
+[node name="A" type="Sprite2D" parent="Text" unique_id=1357370245]
+position = Vector2(-307, -318)
+texture = ExtResource("12_2o6t5")
+
+[node name="T" type="Sprite2D" parent="Text" unique_id=918215449]
+position = Vector2(-192, -323)
+texture = ExtResource("13_fgusp")
+
+[node name="T2" type="Sprite2D" parent="Text" unique_id=69679859]
+position = Vector2(-51.000008, -326)
+texture = ExtResource("13_fgusp")
+
+[node name="A2" type="Sprite2D" parent="Text" unique_id=1631530303]
+position = Vector2(65.99999, -323)
+texture = ExtResource("12_2o6t5")
+
+[node name="C" type="Sprite2D" parent="Text" unique_id=553977085]
+position = Vector2(211, -324)
+texture = ExtResource("14_rulra")
+
+[node name="K" type="Sprite2D" parent="Text" unique_id=1513042565]
+position = Vector2(378, -327)
+texture = ExtResource("15_dtjd4")
+
+[node name="TextAnimation" type="AnimationPlayer" parent="." unique_id=1398719680]
+libraries/ = SubResource("AnimationLibrary_dtjd4")
+
 [connection signal="mouse_entered" from="Button" to="Button_Visual" method="_on_button_mouse_entered"]
 [connection signal="mouse_exited" from="Button" to="Button_Visual" method="_on_button_mouse_exited"]
 [connection signal="pressed" from="Button" to="Button_Visual" method="_on_button_pressed"]
+[connection signal="animation_finished" from="AnimationPlayer" to="Button_Visual" method="_on_animation_player_animation_finished"]

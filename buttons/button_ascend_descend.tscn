@@ -13,6 +13,12 @@
 [ext_resource type="Texture2D" uid="uid://bifms7kq80csf" path="res://assets/ascend_button_norm.png" id="11_h2wt5"]
 [ext_resource type="Texture2D" uid="uid://d3a7qykc7dekp" path="res://assets/descend_button_dif.png" id="12_eqx1d"]
 [ext_resource type="Texture2D" uid="uid://3u44w5ays3ly" path="res://assets/descend_button_norm.png" id="13_ghl05"]
+[ext_resource type="Texture2D" uid="uid://bfw0p5ru07f38" path="res://letters/A.png" id="14_sawjw"]
+[ext_resource type="Texture2D" uid="uid://c0nifimafgdam" path="res://letters/S.png" id="15_qhhik"]
+[ext_resource type="Texture2D" uid="uid://dba68e4w3npdr" path="res://letters/C.png" id="16_vuy7b"]
+[ext_resource type="Texture2D" uid="uid://c6lptt6tr7h8a" path="res://letters/E.png" id="17_coews"]
+[ext_resource type="Texture2D" uid="uid://xfckcwtne3l5" path="res://letters/N.png" id="18_j4giu"]
+[ext_resource type="Texture2D" uid="uid://5cupe6pbnwbf" path="res://letters/D.png" id="19_dc6r5"]
 
 [sub_resource type="CanvasTexture" id="CanvasTexture_f2ffa"]
 diffuse_texture = ExtResource("3_op4me")
@@ -184,6 +190,18 @@ tracks/11/keys = {
 "transitions": PackedFloat32Array(1),
 "update": 0,
 "values": [Vector2(0.1, 0.1)]
+}
+tracks/12/type = "value"
+tracks/12/imported = false
+tracks/12/enabled = true
+tracks/12/path = NodePath("Text:scale")
+tracks/12/interp = 1
+tracks/12/loop_wrap = true
+tracks/12/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0, 0)]
 }
 
 [sub_resource type="Animation" id="Animation_op4me"]
@@ -562,6 +580,90 @@ _data = {
 &"idle_animation": SubResource("Animation_070kq")
 }
 
+[sub_resource type="Animation" id="Animation_fgusp"]
+resource_name = "text"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Text:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(2.3841858e-07, -37)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Text:scale")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.2),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(0, 0), Vector2(0.2, 0.2)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Text:modulate")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0.06666667),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_rulra"]
+resource_name = "text_exit"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Text:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(2.3841858e-07, -37)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Text:scale")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.16666667),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(0.2, 0.2), Vector2(0.3, 0.3)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Text:modulate")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0.033333335, 0.23333333),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_ddlrx"]
+_data = {
+&"text": SubResource("Animation_fgusp"),
+&"text_exit": SubResource("Animation_rulra")
+}
+
 [node name="Ascend_Button" type="Node2D" unique_id=1960019258]
 
 [node name="Button" type="Button" parent="." unique_id=816579383]
@@ -674,6 +776,97 @@ height = 44.0
 [node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=1289863186]
 libraries/ = SubResource("AnimationLibrary_ok286")
 
+[node name="Text" type="Node2D" parent="." unique_id=1121646194]
+position = Vector2(2.3841858e-07, -37)
+scale = Vector2(1e-05, 1e-05)
+
+[node name="Ascend" type="Node2D" parent="Text" unique_id=137422477]
+
+[node name="A" type="Sprite2D" parent="Text/Ascend" unique_id=513019163]
+light_mask = 1024
+position = Vector2(-302, -318)
+scale = Vector2(0.99999994, 0.99999994)
+texture = ExtResource("14_sawjw")
+
+[node name="A2" type="Sprite2D" parent="Text/Ascend" unique_id=1243284935]
+light_mask = 1024
+position = Vector2(-175, -309.99997)
+scale = Vector2(0.99999994, 0.99999994)
+texture = ExtResource("15_qhhik")
+
+[node name="A3" type="Sprite2D" parent="Text/Ascend" unique_id=506119052]
+light_mask = 1024
+position = Vector2(-37.00001, -304.99997)
+scale = Vector2(0.99999994, 0.99999994)
+texture = ExtResource("16_vuy7b")
+
+[node name="A4" type="Sprite2D" parent="Text/Ascend" unique_id=1866139016]
+light_mask = 1024
+position = Vector2(112.999985, -318)
+scale = Vector2(0.99999994, 0.99999994)
+texture = ExtResource("17_coews")
+
+[node name="A5" type="Sprite2D" parent="Text/Ascend" unique_id=282386872]
+light_mask = 1024
+position = Vector2(250, -318)
+scale = Vector2(0.99999994, 0.99999994)
+texture = ExtResource("18_j4giu")
+
+[node name="A6" type="Sprite2D" parent="Text/Ascend" unique_id=422287764]
+light_mask = 1024
+position = Vector2(368, -318)
+scale = Vector2(0.99999994, 0.99999994)
+texture = ExtResource("19_dc6r5")
+
+[node name="Descend" type="Node2D" parent="Text" unique_id=946795373]
+visible = false
+
+[node name="A7" type="Sprite2D" parent="Text/Descend" unique_id=2016411363]
+light_mask = 1024
+position = Vector2(-347, -318)
+scale = Vector2(0.9999998, 0.9999998)
+texture = ExtResource("19_dc6r5")
+
+[node name="A" type="Sprite2D" parent="Text/Descend" unique_id=1581849202]
+light_mask = 1024
+position = Vector2(-214, -318)
+scale = Vector2(0.99999994, 0.99999994)
+texture = ExtResource("17_coews")
+
+[node name="A2" type="Sprite2D" parent="Text/Descend" unique_id=477804307]
+light_mask = 1024
+position = Vector2(-87.00001, -309.99997)
+scale = Vector2(0.99999994, 0.99999994)
+texture = ExtResource("15_qhhik")
+
+[node name="A3" type="Sprite2D" parent="Text/Descend" unique_id=1877455663]
+light_mask = 1024
+position = Vector2(50.99998, -304.99997)
+scale = Vector2(0.99999994, 0.99999994)
+texture = ExtResource("16_vuy7b")
+
+[node name="A4" type="Sprite2D" parent="Text/Descend" unique_id=13087243]
+light_mask = 1024
+position = Vector2(200.99997, -318)
+scale = Vector2(0.99999994, 0.99999994)
+texture = ExtResource("17_coews")
+
+[node name="A5" type="Sprite2D" parent="Text/Descend" unique_id=435345298]
+light_mask = 1024
+position = Vector2(338, -318)
+scale = Vector2(0.99999994, 0.99999994)
+texture = ExtResource("18_j4giu")
+
+[node name="A6" type="Sprite2D" parent="Text/Descend" unique_id=487404480]
+light_mask = 1024
+position = Vector2(456, -318)
+scale = Vector2(0.99999994, 0.99999994)
+texture = ExtResource("19_dc6r5")
+
+[node name="TextAnimation" type="AnimationPlayer" parent="." unique_id=1004074313]
+libraries/ = SubResource("AnimationLibrary_ddlrx")
+
 [connection signal="mouse_entered" from="Button" to="Button_Visual" method="_on_button_mouse_entered"]
 [connection signal="mouse_exited" from="Button" to="Button_Visual" method="_on_button_mouse_exited"]
 [connection signal="pressed" from="Button" to="Button_Visual" method="_on_button_pressed"]
+[connection signal="animation_finished" from="AnimationPlayer" to="Button_Visual" method="_on_animation_player_animation_finished"]

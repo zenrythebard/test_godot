@@ -1,0 +1,81 @@
+[gd_scene format=3 uid="uid://c4nyveqefxbhq"]
+
+[ext_resource type="PackedScene" uid="uid://c07wa3cggmyt4" path="res://buttons/button_attack.tscn" id="1_oybej"]
+[ext_resource type="PackedScene" uid="uid://d3ywwgai754ef" path="res://buttons/button_move.tscn" id="2_6i4r7"]
+[ext_resource type="PackedScene" uid="uid://dr3pxatarlhjc" path="res://buttons/button_vigilance.tscn" id="3_fiv7b"]
+[ext_resource type="PackedScene" uid="uid://btcyhisyb1fk2" path="res://buttons/button_ascend_descend.tscn" id="4_mvd3b"]
+[ext_resource type="Texture2D" uid="uid://r6k46dl1q172" path="res://assets/logo.png" id="5_6qu2w"]
+
+[sub_resource type="Gradient" id="Gradient_uyyjp"]
+colors = PackedColorArray(1, 1, 1, 1, 0, 0, 0, 0)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_3grli"]
+gradient = SubResource("Gradient_uyyjp")
+fill = 1
+fill_from = Vector2(0.5, 0.5046729)
+fill_to = Vector2(0.8457944, 0.17289719)
+
+[sub_resource type="Gradient" id="Gradient_11u48"]
+colors = PackedColorArray(1, 1, 1, 1, 0, 0, 0, 0)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_uyyjp"]
+gradient = SubResource("Gradient_11u48")
+fill = 1
+fill_from = Vector2(0.5, 0.5046729)
+fill_to = Vector2(0.8457944, 0.17289719)
+
+[node name="Node2D" type="Node2D" unique_id=790410922]
+
+[node name="Polygon2D" type="Polygon2D" parent="." unique_id=1264606459]
+light_mask = 524288
+polygon = PackedVector2Array(-20, -16, 1943, -7, 1935, 1091, -16, 1108)
+uv = PackedVector2Array(-386, -139.5, -60, -140.5, -59, 136.5, -392, 137.5)
+
+[node name="MovingLight" type="PointLight2D" parent="." unique_id=1329054495]
+visible = false
+position = Vector2(712.0001, 205)
+scale = Vector2(30.345459, 18.849613)
+energy = 0.75
+range_item_cull_mask = 131072
+texture = SubResource("GradientTexture2D_3grli")
+
+[node name="GoldLight" type="PointLight2D" parent="." unique_id=837370905]
+visible = false
+position = Vector2(968.99994, -96)
+rotation = -0.48894805
+scale = Vector2(47.217278, 43.161472)
+energy = 0.45
+range_item_cull_mask = 524288
+texture = SubResource("GradientTexture2D_uyyjp")
+height = 403.0
+
+[node name="Node2D" type="Node2D" parent="." unique_id=1495577531]
+position = Vector2(-161.00002, -502)
+scale = Vector2(1.86, 1.86)
+
+[node name="Attack_Button" parent="Node2D" unique_id=1960019258 instance=ExtResource("1_oybej")]
+position = Vector2(265.16855, 734)
+
+[node name="Move_Button" parent="Node2D" unique_id=539965531 instance=ExtResource("2_6i4r7")]
+position = Vector2(479, 731)
+
+[node name="Vigilance_Button" parent="Node2D" unique_id=528827305 instance=ExtResource("3_fiv7b")]
+position = Vector2(694.382, 732)
+
+[node name="Ascend_Button" parent="Node2D" unique_id=713077905 instance=ExtResource("4_mvd3b")]
+position = Vector2(911.23596, 735)
+
+[node name="DirectionalLight2D" type="DirectionalLight2D" parent="." unique_id=1004089951]
+position = Vector2(4.359436, -1982)
+color = Color(0, 0, 0, 1)
+energy = 0.32
+blend_mode = 2
+height = 1.0
+max_distance = 16384.0
+
+[node name="Logo" type="Sprite2D" parent="." unique_id=1057878665]
+visible = false
+light_mask = 655360
+position = Vector2(947, 389)
+scale = Vector2(0.55999875, 0.55999875)
+texture = ExtResource("5_6qu2w")
